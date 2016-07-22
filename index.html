@@ -5,21 +5,31 @@
   <title>SrgSolutionsSite</title>
   <base href="/srg-solutions-site/">
 
+  <link rel="stylesheet" href="index.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root><div>Loading...</div></app-root>
+<app-root>
+  <div class="centerFlex showbox">
+    <div class="loader">
+      <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+    </div>
+  </div>
+</app-root>
 
-    <script src="vendor/es6-shim/es6-shim.js"></script>
-    <script src="vendor/reflect-metadata/Reflect.js"></script>
-    <script src="vendor/systemjs/dist/system.src.js"></script>
-    <script src="vendor/zone.js/dist/zone.js"></script>
-    <script>
-      System.import('system-config.js').then(function () {
-        System.import('main');
-      }).catch(console.error.bind(console));
-    </script>
+<script src="vendor/es6-shim/es6-shim.js"></script>
+<script src="vendor/reflect-metadata/Reflect.js"></script>
+<script src="vendor/systemjs/dist/system.src.js"></script>
+<script src="vendor/zone.js/dist/zone.js"></script>
+<script>
+  System.import('system-config.js').then(function () {
+    System.import('main');
+  }).catch(console.error.bind(console));
+</script>
 
 </body>
 </html>
